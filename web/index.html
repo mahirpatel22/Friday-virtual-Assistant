@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friday AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Required to connect Python backend with JS -->
+    <script type="text/javascript" src="/eel.js"></script>
+</head>
+<body>
+
+    <div class="assistant-container">
+        <!-- Status Indicator -->
+        <div class="status-badge" id="statusBadge">
+            <span class="dot"></span>
+            <span id="statusText">Initializing...</span>
+        </div>
+
+        <!-- Audio Visualizer Orb -->
+        <div class="orb-wrapper">
+            <div class="orb-glow"></div>
+            <div class="orb" id="orb">
+                <div class="core"></div>
+            </div>
+        </div>
+
+        <!-- Live Transcript View -->
+        <div class="transcript-container">
+            <p class="user-speech" id="userSpeech"></p>
+            <p class="ai-response" id="aiResponse">Standing by...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
